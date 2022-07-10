@@ -1,3 +1,9 @@
+## 2.2.0
+
+- Raises minimum Dart version to 2.17 and Flutter version to 3.0.0.
+- Updates `isMocked` flag on iOS 15 and higher.
+- Updates the example application to request permissions when start listening to the position stream.
+
 ## 2.1.4
 
 - Fix background location indicator not showing on first time using the service.

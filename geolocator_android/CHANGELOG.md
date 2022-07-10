@@ -1,3 +1,22 @@
+## 4.0.0
+
+> **IMPORTANT:** when updating to version 4.0.0 make sure to also set the `compileSdkVersion` in the `android/app/build.gradle` file to `33`.
+
+- Set android `compileSdkVersion` to `33` (Android 13);
+- Fixed the deprecation warnings/errors which caused the compilation to fail when using `compileSdkVersion 33`.
+- Make sure the example app compiles against Android SDK 33.
+
+## 3.2.1
+
+- Use `java.security.SecureRandom` instead of `java.util.Random` to ensure the 
+`ActivityRequest` identifier is generated in a cryptographically strong fasion.
+
+## 3.2.0
+
+- Raises minimum Dart version to 2.17 and Flutter version to 3.0.0.
+- Removes deprecated `android.enableR8` property from gradle properties.
+- Updates the example application to request permissions when start listening to the position stream.
+
 ## 3.1.8
 
 - Ensures that when Google mobile services are globally excluded as a dependency to automatically fallback to the Android LocationManager.

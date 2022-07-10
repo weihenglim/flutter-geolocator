@@ -42,11 +42,11 @@ The TL;DR version is:
 android.useAndroidX=true
 android.enableJetifier=true
 ```
-2. Make sure you set the `compileSdkVersion` in your "android/app/build.gradle" file to 31:
+2. Make sure you set the `compileSdkVersion` in your "android/app/build.gradle" file to 33:
 
 ```
 android {
-  compileSdkVersion 31
+  compileSdkVersion 33
 
   ...
 }
@@ -254,8 +254,8 @@ In certain situation it is necessary to specify some platform specific settings.
 
 ```dart
 import 'package:geolocator/geolocator.dart';
-import 'package:geoloator_apple/geolocator_apple.dart';
-import 'package:geoloator_android/geolocator_android.dart';
+import 'package:geolocator_apple/geolocator_apple.dart';
+import 'package:geolocator_android/geolocator_android.dart';
 
 late LocationSettings locationSettings;
 
